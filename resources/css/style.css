@@ -1,0 +1,36 @@
+body{
+    background: #B22222;
+    font-family: 'Roboto', sans-serif;
+    text-align: center
+}
+section{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 1px #00000048;
+    background: white;
+    text-align: center;
+    height: 380px;
+}
+h1{
+    padding-top: 1.5em;
+    color: white;
+}
+#btn{
+    border: none;
+    padding: 10px 30px;
+    background: #E74C3C;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+#btn:hover{
+    cursor: pointer;
+    transition: 0.9s;
+    background: rgb(216, 51, 33);
+}
+footer{
+    padding-top: 1em;
+    color: white;
+}

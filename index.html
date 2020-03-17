@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <title>Calculadora de Gorjeta</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4">Calcular gorjeta</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="form-group">
+            <div class="row">
+                <div class="col-12">
+                   <p class="lead">
+                      <label for='txtvalor'>Qual o valor da sua conta?</label><br />
+                      <input class="form-control" type="number" placeholder="Valor" id="txtvalor" min='0' />
+                   </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label class="lead" for='opc'>Como foi o nosso serviço?</label><br />
+                    <select class="form-control form-control-lg" id="opc">
+                        <option>30% - Incrível</option>
+                        <option>20% - Bom</option>
+                        <option>15% - Ok</option>
+                        <option>10% - Ruim</option>
+                        <option>5% - Horrível</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="lead">
+                        <br /><label for='txtpessoas'>Quantas pessoas irão dividir a conta?</label><br />
+                        <input class="form-control" type="number" placeholder="N° de pessoas" id="txtpessoas" min='0' />
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="h4" id="btn" onclick="calcular()" >Calcular!</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p class="h6 lead">Copyright &copy; 2020</p>
+    </footer>
+    <script src="resources/js/script1.js"></script>
+</body>
+</html>
